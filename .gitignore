@@ -1,5 +1,5 @@
 .vscode/
-# dags/csv/*
+dags/csv/*
 dags/files/*
 
 # Byte-compiled / optimized / DLL files
