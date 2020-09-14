@@ -68,7 +68,7 @@ for year in YEARS:
 
 process_files = PythonOperator(
     task_id='process_files',
-    python_callable=lambda: functions.process([f'dags/files/{i}' for i in os.listdir('dags/files')]),
+    python_callable=lambda: functions.process([f'dags/files/{i}' for i in os.listdir('dags/files') if not i.startswith('README')]),
     dag=dag
 )
 
