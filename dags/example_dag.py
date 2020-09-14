@@ -18,7 +18,7 @@ default_dag_args = {
     'depends_on_past': False,
     'start_date': airflow.utils.dates.days_ago(1),
     'email': ['lucas.abbade@gscap.com.br'],
-    'project_id': 'example_scipy',
+    'project_id': 'example_airflow',
     'retries': 2,
     'retry_delay': timedelta(minutes=2)
 }

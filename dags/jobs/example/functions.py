@@ -10,8 +10,7 @@ get_year_re = re.compile(r'\d+')
 
 def download_year(year):
     file_path = f'dags/files/{year}.zip'
-    urlretrieve(
-        f'http://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{year}.ZIP', file_path)
+    urlretrieve(f'http://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{year}.ZIP', file_path)
     return file_path
 
 
