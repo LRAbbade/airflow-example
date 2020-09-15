@@ -29,7 +29,7 @@ def _to_float(s):
 
 def _get_info(line):
     return {
-        'date': line[2:9],
+        'date': line[2:10],
         'trading_code': line[12:23].strip(),
         'short_name': line[27:38].strip(),
         'open': _to_float(line[56:68].strip()),
